@@ -1,0 +1,481 @@
+                  IMPORTANT
+
+The Css that is used in the animate function of 
+jquery has the properties of css which 
+contain hyphen in them written in camel case format.
+
+Css prioritises inline calls(made in jquery) over 
+normal calls
+
+mouse enter is like hover
+
+stop finishes event queque too
+
+https://stackoverflow.com/questions/28252362/is-there-a-difference-in-chaining-functions-and-using-callback-functions-in-jque
+
+USE str.replace(/[\W_]/g,'') replaces all punctuations
+and spaces by the charcter specified after comma
+
+arr.filter(Boolean) filters the array from all values
+ like NULL ,etc
+
+JSON is a popular and agreed upon format for sending
+ receiving and storing data it is a
+
+combination of arrays and object under a single head
+
+Process of sending and receiving data without page 
+reloading is done via ajax
+
+GET downloads or gets data to our file
+
+POST is for sending data
+
+Always try to write scripts below the body tags so 
+that it loads after the entire html and css above it
+
+use br for going to next line
+
+In npm vim is used to read files to exit vim
+ : press esc and then press : then press :wq to save
+
+for async input in node use https://www.youtube.com/watch?v=7-R_zJyKHU4&index=4&list=PLtwj5TTsiP7sW6EQvABXdmUV4WfCbV2Gc 
+and watch from minute 7
+response has a response.on function which means =>
+
+response.on can take a few 'events' that happen during
+ the response life cycle,
+
+The two you have above are response.on('data'...) 
+which is when you get the data and response.on('end'...) 
+is at the end of the response, simple as that!
+The difference between var and let is that the scope 
+of var is not limited to the block it is defined 
+in instead its scope extends till scope of
+ the function check out https://www.youtube.com/watch?v=XgSjoHgy3Rk
+
+ctrl + shift + w closes the terminal
+ctrl + w closes the running application
+
+CoffeeScript is a programming language used to compile JavaScript
+So the code written in CoffeeScript and is compiled output is in 
+JavaScript. It is for writing less code and doing much more than 
+regular JavaScript.
+
+REST is an architectural style. Its a set of guidelines that
+work well together and help build the architecture of your 
+application. It defines a set of guidelines that can be used 
+by the developers to create APIs. 
+
+Protocol can be thought of as a language or a mechanism 
+for communication
+
+emmiter.emit('/*  */') emits event
+emmiter.on('event','callback') or 
+emiter.addlistener('event','callback') listens 
+to event
+
+response.pipe(/**/) it sends data from the 
+stream which comes as dicrete stuff in such a 
+way that the whole of the data is transmitted in 
+one go
+
+socket is the end point of communication just 
+like the receiver in a telephone call
+
+the listen function waits for the caller
+
+To render a JSX expression means to make it 
+appear onscreen.
+
+ReactDOM is the name of a JavaScript library. This 
+library contains several React-specific methods, 
+all of which deal with the DOM in some way or another.
+
+The first argument is appended to whatever element is selected by the second argument of ReactDOM() method i.e the second argument determines the placement(or rendering ) of the first argument.
+
+About the hell called API http://tech360lanka.blogspot.com/2015/07/what-hell-is-api-do.html.
+API is an interface that allows one to connect with the application
+that has provided the API. It refers to an endPoint which allows a 
+programmer to access the application from the code using the endPoint.
+For more watch https://www.youtube.com/watch?v=BRdcRFvuqsE&t=171s
+
+In summary, here's what happens when you try to update
+ the DOM in React:
+The entire virtual DOM gets updated.
+The virtual DOM gets compared to what it looked like
+ before you updated it. React figures out which 
+ objects have changed.
+The changed objects, and the changed objects only, get updated on the real DOM.
+Changes on the real DOM cause the screen to change.
+
+Curly braces in JSX tags make the script behave as 
+javascript instead of plain JSX(similar to html)(JSX is a preprocessor to insert xml syntax into the js)
+
+Note that in HTML, event listener names are written 
+in all lowercase, such as onclick or onmouseover.
+ In JSX, event listener names are written in camelCase,
+  such as onClick or onMouseOver.
+
+You can not inject an if statement into a JSX expression.
+
+whenever one encloses a tag inside parenthesis then 
+even the interior stuff in the tag is treated
+as javascript instead of jsx
+eg: const img = <img src={pics[coinToss() == 'heads' ?  'kitty': 'doggy']} />;
+
+todo : jus c what is hoisting in js
+
+React events are named using camelCase, rather than 
+lowercase.
+
+With JSX you pass a function as the event handler, 
+rather than a string.
+
+If a JavaScript file contains JSX code, then that 
+file will have to be compiled. That means that before 
+the file reaches a web browser, a JSX compiler will 
+translate any JSX into regular JavaScript.
+
+in case u forget the significance of 'this' refer
+https://www.youtube.com/watch?v=NV9sHLX-jZU
+
+The reason for this is that in <Button /> is not an 
+HTML-like JSX element; it's a component instance. i.e 
+ <Button /> is an object of the component and not a 
+ HTML tag.
+
+for more info on constructor super and static watch 
+https://www.youtube.com/watch?v=31diNPh4mMQ
+
+Methods should never be comma-separated, if inside of
+ a class body.
+
+Due to the way that event handlers are bound in 
+JavaScript, this.toggleMood() loses its this when
+ it is used on line 20(a function defined as toggleMood).
+Therefore, the expressions this.state.mood and 
+this.setState on lines 7 and 8 (the occurance of lines 7 and lines 8 is only for refferal purpose and can be neglected) 
+won't mean what they're supposed 
+to... unless you have already bound the correct this to this.toggleMood.
+
+Actually the bind used in the this.state object ensures that the this in the handleChange(or change handler)
+function is a reference to the global this(the this of the class thats rendering html).
+
+That is why we must bind this.toggleMood to this on line 8(only for depicting purposes).
+
+ In React, whenever you define an event handler that uses this, you need to add this.methodName = this.methodName.bind(this) to your constructor function.
+
+ The code in the component will not begin from render dont confuse it to be like int main function the component follows top-down approach.
+
+ A component "mounts" when it renders for the first time. This is when mounting lifecycle methods get called.
+
+Context is always the value of the this keyword which is a reference to the object that “owns” the currently executing code.
+
+the command event.target.value fires the event on the target DOM element in that DOM's value attribute
+
+todo : when revising regexp do compare https://guide.freecodecamp.org/certificates/telephone-number-validator/ and ur solution to the project
+
+dispatch sends the action into redux store refer this for more https://learn.freecodecamp.org/front-end-libraries/redux/dispatch-an-action-event
+
+https://askubuntu.com/questions/73160/how-do-i-find-the-amount-of-free-space-on-my-hard-drive check this for laerning about the xisting diskspace
+
+npm install saves the specified packages into the dependencies of your package..json file.
+For more refer this webpage https://stackoverflow.com/questions/19578796/what-is-the-save-option-for-npm-install
+
+For more on react reference watch https://www.youtube.com/watch?v=tiytyGEodl0 basically ref allows us to treat DOM elements using variable names i.e it allows us to those DOM elements
+at other places.
+
+this.audio.currentTime=0 is used at some places to solve the problem to sounds playing in quick succession that the
+system is not able to distinguish between sounds and avoid such types of problems.
+
+I have almost completed all of freecodecamp projects and am interested in WebD now can u tell me how to move ahead after selecting org (I looked up at Mozilla)
+but  am not sure about what my next step should be
+
+Learn HTTP, TCP  , UDP , DNS, SSL LTS- :long term support
+
+with node the js gets xtra like being able to talk to a database and do
+several other low level operations that can be done in languages like
+c++.
+
+Glitch mongoDB - https://citrine-meter.glitch.me
+
+https://cool-berry.glitch.me
+
+validating a url in node js follow https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url/22648406#22648406
+
+To access a file in the same directory 
+reqiure('./(dir-name/its-insiderContent)')
+
+A Promise method is an object that represents
+an action that has not been completed but will be completed 
+at some point later mostly asynchronous operations 
+
+Exercise tracker https://glitch.com/edit/#!/join/1a759db2-5e8f-4e4e-b20f-562a2b7b723f
+
+FileMetadata https://glitch.com/edit/#!/join/666b48c3-3f37-43c1-9587-7a58aa86b0b6
+
+bundle install must run in a directory which contains a GemFile 
+Gemfile and bundler are a new introduction to ruby and hav been added 
+so as to resolve a following issue :
+   We used to reqiure the file that we wanted to use in a project
+    which would byDefault install its latest version but  there are
+    some aplications which reqiure a specific version which may or may
+    not be the latest and there are many gems which need other gems 
+    for their working there is a huge possibility that one gem say 
+    devise may need a gem warden with version 1.2.1 and another gem 
+    say rails needs warden to be at version 2.0.1 so in order to solve
+     this conflict Gemfile and bundle were introduced so one can reqiure in a different way check video 
+    https://www.youtube.com/watch?v=ZE-8rqPI3B4 from 3 mins onwards for
+    detailed data
+
+Nautilus is the file browser in ubuntu
+
+The ~ between : and $ in the prompt represents the current working directory. ~ (when the next character is a / or, as in this case, nothing at all) is shorthand for your home directory, /home/collins.
+
+deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/
+
+gcc-5-base (= 5.3.1-14ubuntu2) but 5.4.0-6ubuntu1~16.04.9 is to be installed
+
+In multitasking computer operating systems, a daemon is a computer program that runs as a background process, rather than being under the direct control of an interactive user. Traditionally, 
+the process names of a daemon end with the letter d, for clarification that the process is, in fact, a daemon, and for differentiation between a daemon and a normal computer program. For example,
+syslogd is the daemon that implements the system logging facility, and sshd is a daemon that serves incoming SSH connections.
+
+To update the time to match that of the server use : 
+sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
+
+Markup languages are designed for the processing, definition and presentation of text. The language specifies code for formatting, both the layout and style, within a text file. The code used to 
+specify the formatting are called tags. HTML is a an example of a widely known and used markup language.
+
+caret refers to this symbol ^
+
+.md is an extension for a markdownn file
+
+Avoid the following practices on reducers :
+ 1. Mutate its arguments;
+
+ 2. Perform side effects like 
+    API calls and routing transitions;
+
+ 3. Call non-pure functions, e.g. Date.now() 
+    or Math.random().
+
+A reducer must never return undefined.    
+
+Whenever we import stuff with curly braces what we 
+mean to do is to be able to use only that required 
+function or object instead of the whole library which
+contains that particular function or object.
+eg:                 import {createStore} from 'redux'
+is the same as    { import redux from 'redux'
+                    let createStore = redux.createStore
+                  }
+    In both of the above cases createStore functions in the same way
+    and is the exact same thing.
+
+To access files way up the directory u r currently 
+working on use  ../../and so on
+     eg:        ../../scss/
+    the intermediate parent is represented by ./
+    ../ = takes u up by two directories
+
+PropTypes in a reactClass are used for defining(or validating) the dataTypes of the objects created. For more on PropTypes visit the link https://www.fullstackreact.com/p/appendix-a-proptypes/   
+
+The die function in PHP prints the message inside the
+ function and exits the current script.
+
+Bundle Exec is used to open specific gemfiles or to use gemfiles 
+associated only with the project or the application you are working on.
+watch https://www.youtube.com/watch?v=o_VHvwjFcmQ if needed video is 
+not very god though.
+
+Rake is a multiPurpose tool for running scripts.
+
+File/Folder	Purpose
+app/	    Contains the controllers, models, views, helpers, mailers,
+            channels, jobs and assets for your application. You'll 
+            focus on this folder for the remainder of this guide.
+bin/	    Contains the rails script that starts your app and can 
+            contain other scripts you use to setup, update, deploy 
+            or run your application.
+config/	    Configure your application's routes, database, and more. 
+            This is covered in more detail in Configuring Rails 
+            Applications.
+config.ru	Rack configuration for Rack based servers used to start the 
+            application. For more information about Rack, see the 
+            Rack website.
+db/	        Contains your current database schema, as well as the 
+            database migrations.
+
+Gemfile  Gemfile.lock       These files allow you to specify what gem 
+                            dependencies are needed for your Rails 
+                            application. These files are used by the 
+                            Bundler gem. For more information about 
+                            Bundler, see the Bundler website.
+lib/	     Extended modules for your application.
+log/	     Application log files.
+package.json	     This file allows you to specify what npm 
+                     dependencies are needed for your Rails application.
+                     This file is used by Yarn. For more information 
+                     about Yarn, see the Yarn website.
+public/	     The only folder seen by the world as-is. Contains 
+             static files and compiled assets.
+Rakefile	 This file locates and loads tasks that can be run from 
+             the command line. The task definitions are defined 
+             throughout the components of Rails. Rather than changing 
+             Rakefile, you should add your own tasks by adding files 
+             to the lib/tasks directory of your application.
+README.md	 This is a brief instruction manual for your application. 
+             You should edit this file to tell others what your 
+             application does, how to set it up, and so on.
+test/	     Unit tests, fixtures, and other test apparatus. These are 
+             covered in Testing Rails Applications.
+tmp/	     Temporary files (like cache and pid files).
+vendor/	     A place for all third-party code. In a typical Rails 
+             application this includes vendored gems.
+.gitignore	     This file tells git which files (or patterns) it should
+                 ignore. See GitHub - Ignoring files for more info about
+                 ignoring files.
+.ruby-version	This file contains the default Ruby version.
+
+Rack functions as a Ruby-replacement for CGI and sits between the 
+application's frameworks and its servers ... for more 
+watch https://www.youtube.com/watch?v=NJ-ilQMsqMs&t=112s
+and read http://codefol.io/posts/What-is-Rack-A-Primer/
+
+Puma is a web server distributed with Rails by default.
+
+By default, view templates are written in a language called 
+eRuby (Embedded Ruby) which is processed by the request cycle in 
+Rails before being sent to the user.
+
+A resource is the term used for a collection of similar objects, such 
+as articles
+
+Different routes are served by different acitons which is used to
+determine which routes will be served to which views and 
+controllers as a controller may be approached by more than one route.
+A controller is mandatory for serving requests.
+
+A controller is simply a class that is defined to inherit 
+from ApplicationController class of ruby
+
+A .gitignore file allows git to determine which files and directories 
+are to be ignored.
+
+In rails MVC is M : model is named ActiveRecord
+                V : views is named ActionView
+                C : controller is named ActionController
+
+Methods in rails's Controllers are reffered to as actions.
+
+The working of Rails static communication process is as follows :
+First an address is entered in a web Browser .The browser then checks 
+in the route file as to how to handle the request that has been made 
+i.e the request routed to the router which handles the request.
+The request in our code base is mapped to a controller (basic 
+architecture of Ruby). Which has got acions defined (actions are used
+by controllers to handle the requests it receives ) 
+(like => root Welcome#index defines index as an action (a method defined
+ in the controller of the application)) then the action directs the 
+ request into the 
+ views/controller(welcome in this case)/action.extensions(index.html.erb)
+ For more insight watch :
+https://www.youtube.com/watch?v=NEaihnOVA10&index=4&list=PLI9-gdkrqy7y_zCh4wGlaTY8qlDOtzcz4
+
+The difference between DATETIME and TIMESTAMP is that DATETIME stores 
+all dates from 1000 to 9999 and uses up 8 bits while TIMESTAMP 
+basically stores only the number of seconds elapsed from 1970 and uses 
+up 4 bits.
+https://www.youtube.com/watch?v=NEaihnOVA10&index=4&list=PLI9-gdkrqy7y_zCh4wGlaTY8qlDOtzcz4
+
+Various handlers used by rails are as follows : builder handler is 
+used to build XML templates and 
+coffee handler uses CoffeeScript to build JavaScript templates. The 
+erb handler is the default handler in rails for rendering html.
+
+The form_with helper method provides with a FormBuilder object form 
+which allow us to build label, text_fields etc.
+
+In the text render plain: params[:articles].inspect render is the 
+method and the lines after that represent the parameters of the 
+method (as Ruby does not use brackets for arguments to a function)
+
+The model generated by the rails generator creates a table 
+pluralizing the name of the model and the table is then mapped to 
+the model(ActiveRecord) 
+
+Migrations are Ruby classes that are designed to make it simple to
+create and modify database tables.Rails uses rake commands to run
+migrations, and it's possible to undo a migration after it's been
+applied to your database. Migration filenames include a timestamp 
+to ensure that they're processed in the order that they were created.
+There are two timestamps that are used by rails, one is to track 
+creation and the other is to track updation.
+
+Public methods must be declared before private visibility in Rails.
+
+Instance variables like name in ruby are declared as 
+@name= something....
+
+The resource key in the routes.rb file in the config folder 
+automatically creates all the routes for your controller.
+
+<% %> : This executes the ruby code inside it 
+<%= %> : This prints the statement inside it
+<% -%> : This disallows the line break after the expression
+<%# %> : This Comments out code within brackets; not sent to 
+client (as opposed to HTML comments).
+
+If you want to link to an action in the same controller, 
+you don't need to specify the :controller option, as Rails will use 
+the current controller by default.
+
+Use the following code for running some functions by default(following DRY) :
+  before_action : function , only : [:show , :edit , :update]
+  The above method (function) will run automatically before the 
+  actions defined by the only key
+
+The render 'new' (render) method is used so that the object 
+(currently in use) is passed back to the new template when it is rendered. 
+
+pluralize is a rails helper that takes a number and a string as its 
+arguments. If the number is greater than one, the string will be 
+automatically pluralized.
+
+Rails automatically wraps fields that contain an error with a div with 
+class field_with_errors. You can define a css rule to make them standout.
+
+PATCH HTTP method which is the HTTP method you're expected to use to
+update resources according to the REST protocol.
+
+The arguments to form_with could be model objects, say, model: @article 
+which would cause the helper to fill in the form with the fields of 
+the object. Passing in a symbol scope (scope: :article) just creates the
+fields but without anything filled into them.
+
+It is not necessary to pass all the attributes to update. For example, 
+if @article.update(title: 'A new title') was called, Rails would only 
+update the title attribute, leaving all other attributes untouched.
+
+By convention, partial files are prefixed with an underscore.
+
+The method: :delete and data: { confirm: 'Are you sure?' } options 
+are used as HTML5 attributes so that when the link is clicked, Rails
+will first show a confirm dialog to the user, and then submit the link 
+with method delete. This is done via the JavaScript file rails-ujs which
+is automatically included in your application's layout (app/views/layouts/application.html.erb) 
+when you generated the application. Without this file, the confirmation 
+dialog box won't appear.
+
+For details in regards to routing and stuff (Url's) checkout
+the bookmarked Rails Routes page
+
+The (:references) keyword used in the bash command is a special data type for models.
+It creates a new column on your database table with the provided model name appended 
+with an _id that can hold integer values.
+
+To know about using :(colon) in ruby check the webpage : 
+https://stackoverflow.com/questions/6337897/what-is-the-colon-operator-in-ruby
+
+To know more about resources visit https://stackoverflow.com/questions/10799198/what-are-rest-resources

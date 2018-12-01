@@ -56,6 +56,7 @@ in instead its scope extends till scope of
 
 ctrl + shift + w closes the terminal
 ctrl + w closes the running application
+ctrl+shift+t opens a new tab in terminal
 
 CoffeeScript is a programming language used to compile JavaScript
 So the code written in CoffeeScript and is compiled output is in 
@@ -160,7 +161,7 @@ won't mean what they're supposed
 to... unless you have already bound the correct this to this.toggleMood.
 
 Actually the bind used in the this.state object ensures that the this in the handleChange(or change handler)
-function is a reference to the global this(the this of the class thats rendering html).
+function is a reference to the object which contains the function originally this(the this of the class thats rendering html).
 
 That is why we must bind this.toggleMood to this on line 8(only for depicting purposes).
 
